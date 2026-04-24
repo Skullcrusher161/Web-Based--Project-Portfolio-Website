@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Certifications — Hetarth Salat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════
+       NAVBAR
+  ═══════════════════════════════ -->
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-bracket">[</span>hs<span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">about</a></li>
+        <li><a href="index.html#skills">skills</a></li>
+        <li><a href="certifications.html" class="nav-active">certificates</a></li>
+        <li><a href="index.html#contact" class="nav-cta">contact</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════
+         PAGE HEADER
+    ═══════════════════════════════ -->
+    <section class="certs-page-hero">
+      <a href="index.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Back to Portfolio
+      </a>
+      <div class="section-label" style="margin-top: 24px;">
+        <span class="label-line"></span>
+        <span class="label-text">// certifications.gallery</span>
+      </div>
+      <h1 class="certs-page-title">Earned.<br><span class="accent">Verified.</span></h1>
+      <p class="certs-page-sub">
+        Three checkpoints in an ongoing journey — each one representing a deliberate investment in a new skill.
+      </p>
+    </section>
+
+    <!-- ═══════════════════════════════
+         CERTIFICATE GALLERY
+    ═══════════════════════════════ -->
+    <section class="certs-gallery-section">
+      <div class="certs-gallery-grid">
+
+        <!-- IBM Python -->
+        <article class="cert-frame-wrap">
+          <div class="cert-frame-label">01 / 03</div>
+          <a href="assets/ibm-python.pdf" target="_blank" rel="noopener" class="cert-frame">
+            <div class="cert-frame-inner">
+              <div class="cert-issuer-logo">IBM</div>
+              <div class="cert-frame-body">
+                <p class="cert-issued-by">Issued by</p>
+                <h2 class="cert-title">Python for Data Science, AI &amp; Development</h2>
+                <p class="cert-desc">
+                  Covers Python fundamentals, data structures, working with data, and an introduction to machine learning libraries.
+                </p>
+              </div>
+              <div class="cert-frame-footer">
+                <span class="cert-verified">
+                  <span class="verified-dot"></span>
+                  Verified Certificate
+                </span>
+                <span class="cert-open-hint">Click to open PDF ↗</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Ethnotech HTML/CSS -->
+        <article class="cert-frame-wrap">
+          <div class="cert-frame-label">02 / 03</div>
+          <a href="assets/ethnotech-htmlcss.pdf" target="_blank" rel="noopener" class="cert-frame">
+            <div class="cert-frame-inner">
+              <div class="cert-issuer-logo ethnotech">Ethnotech</div>
+              <div class="cert-frame-body">
+                <p class="cert-issued-by">Issued by</p>
+                <h2 class="cert-title">HTML &amp; CSS Web Development</h2>
+                <p class="cert-desc">
+                  Semantic HTML5, CSS layout models including Flexbox &amp; Grid, and responsive design principles for modern web.
+                </p>
+              </div>
+              <div class="cert-frame-footer">
+                <span class="cert-verified">
+                  <span class="verified-dot"></span>
+                  Verified Certificate
+                </span>
+                <span class="cert-open-hint">Click to open PDF ↗</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Simplilearn Prompt Engineering -->
+        <article class="cert-frame-wrap">
+          <div class="cert-frame-label">03 / 03</div>
+          <a href="assets/simplilearn-prompt.pdf" target="_blank" rel="noopener" class="cert-frame">
+            <div class="cert-frame-inner">
+              <div class="cert-issuer-logo simplilearn">Simplilearn</div>
+              <div class="cert-frame-body">
+                <p class="cert-issued-by">Issued by</p>
+                <h2 class="cert-title">Prompt Engineering for AI</h2>
+                <p class="cert-desc">
+                  Techniques for designing effective prompts, working with large language models, and applying prompt patterns in real workflows.
+                </p>
+              </div>
+              <div class="cert-frame-footer">
+                <span class="cert-verified">
+                  <span class="verified-dot"></span>
+                  Verified Certificate
+                </span>
+                <span class="cert-open-hint">Click to open PDF ↗</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         BACK CTA
+    ═══════════════════════════════ -->
+    <section class="certs-back-section">
+      <p class="certs-back-note">More certifications on the way — this list grows with each semester.</p>
+      <a href="index.html" class="btn-ghost">← Return to Portfolio</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-copy">© 2025 Hetarth Salat</span>
+    <span class="footer-sep">·</span>
+    <span class="footer-built">Built with HTML &amp; CSS · No frameworks.</span>
+  </footer>
+
+</body>
+</html>
