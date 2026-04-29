@@ -1,11 +1,11 @@
-# Hetarth Salat — Portfolio Website
+# Hetarth Salat — Portfolio v2
 
-A clean, professional, multi-page portfolio built with semantic HTML5 and handwritten CSS.  
-No frameworks. No build tools. Just solid fundamentals — as it should be.
+A clean, professional, multi-page portfolio hand-built with semantic HTML5 and CSS3.  
+No frameworks. No build tools. Pure fundamentals — exactly the philosophy it represents.
 
-**Theme:** Deep Winter (Navy · Slate · White · Accent Blue)  
-**Author:** Hetarth Salat — B.Tech CSE (AI/ML), Parul University, Vadodara  
-**GitHub Profile:** [@Skullcrusher161](https://github.com/Skullcrusher161)
+> **Live Demo:** `https://Skullcrusher161.github.io/<repo-name>/`  
+> **Author:** Hetarth Salat — B.Tech CSE (AI/ML), Parul University, Vadodara  
+> **Theme:** Deep Winter (Navy · Slate · Ice Blue)
 
 ---
 
@@ -14,46 +14,59 @@ No frameworks. No build tools. Just solid fundamentals — as it should be.
 ```
 portfolio/
 │
-├── index.html            → Home page: Hero, Foundational Narrative, Tech Stack Grid
-├── certificates.html     → Certificate gallery with hover-lift cards
-├── contact.html          → About Me narrative + Email / LinkedIn / GitHub links
-├── resume.html           → Embedded PDF viewer + download button
+├── index.html              →  Home — Hero, Foundations Narrative, Tech Stack Grid
+├── certifications.html       →  Large-format certificate gallery (hover-lift cards)
+├── resume.html             →  Inline HTML resume + PDF download button
+├── contact.html            →  About Me narrative + Email / LinkedIn / GitHub links
 │
-├── style.css             → Universal external stylesheet (all pages share this)
+├── style.css               →  Universal stylesheet (ALL pages share this file)
 │
-├── README.md             → This file — project documentation
-├── .gitignore            → Standard exclusions for web projects
+├── README.md               →  You are here
+├── .gitignore              →  Standard web project exclusions
 │
-└── assets/               → All static files (images & PDF)
-    ├── cert-python-ibm.jpg
-    ├── cert-htmlcss-ethnotech.jpg
-    ├── cert-prompt-simplilearn.jpg
-    ├── cert-hackathon-vadodara.jpg
-    └── hetarth-salat-resume.pdf
+└── assets/                 →  Static files — images and PDF
+    ├── cert-python-ibm.jpg            ← IBM Python certificate screenshot
+    ├── cert-htmlcss-ethnotech.jpg     ← Ethnotech HTML/CSS cert screenshot
+    ├── cert-prompt-simplilearn.jpg    ← Simplilearn Prompt Engineering cert
+    ├── cert-hackathon-vadodara.jpg    ← Vadodara Hackathon 6.0 cert/photo
+    └── hetarth-salat-resume.pdf       ← Your resume as a PDF (for download)
 ```
 
 ---
 
+## Page Overview
 
-## CSS Architecture Notes
-
-All styles live in a single `styles.css`. The file is organised into clearly labelled sections:
-
-1. CSS Custom Properties (design tokens — colours, fonts, spacing)
-2. Reset & Base
-3. Typography
-4. Layout Utilities (`.container`, `.section`)
-5. Navbar (sticky, frosted-glass effect via `backdrop-filter`)
-6. Hero
-7. Narrative Section
-8. Tech Stack Grid
-9. Certificates Grid
-10. Contact Layout
-11. Resume Embed
-12. Footer
-13. Animations (`fadeUp`, staggered delays)
-14. Responsive breakpoints (900px, 650px, 420px)
+| File | URL Path | Contents |
+|---|---|---|
+| `index.html` | `/` | Hero section, Foundations narrative, 4-col Tech Stack grid |
+| `certificates.html` | `/certifications.html` | Full-width certificate cards (alternating layout, hover lift) |
+| `resume.html` | `/resume.html` | Inline styled resume: Education, Projects, Skills, Certs + PDF download |
+| `contact.html` | `/contact.html` | About Me narrative + Email, LinkedIn, GitHub contact links |
 
 ---
 
-*Built with ❤ and handwritten CSS — no frameworks were harmed in the making of this portfolio.*
+## CSS Architecture
+
+`style.css` is one file, organised into clearly labelled sections:
+
+| Section | What it controls |
+|---|---|
+| CSS Custom Properties | All colour tokens, fonts, spacing, shadows |
+| Reset & Base | Universal box-sizing, body defaults |
+| Typography | h1–h4, p, a, strong |
+| Layout Helpers | `.wrap`, `.section`, `.eyebrow`, `.rule` |
+| Buttons | `.btn-solid`, `.btn-ghost` |
+| Navbar | Sticky frosted-glass nav with mobile burger |
+| Home — Hero | Title, role, body, CTA buttons |
+| Home — Narrative | 2-col grid, pull quote, pillar items |
+| Home — Tech Grid | 4-col card grid with status badges |
+| Certificates | Large alternating card layout |
+| Resume | Header band, 2-col body, skill bars, sidebar certs |
+| Contact | 2-col grid, contact link cards, facts table |
+| Footer | Minimal 2-column footer |
+| Animations | `fadeUp` keyframes with staggered delays |
+| Responsive | Breakpoints at 960px, 640px, 400px |
+
+---
+
+*Built with patience and handwritten CSS — no frameworks, no shortcuts, no apologies.*
