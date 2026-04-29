@@ -1,25 +1,59 @@
-🌐 Personal Portfolio Website
-A clean, responsive, and professional portfolio website designed to showcase my journey as a Computer Science student and aspiring AI/ML engineer. This project serves as a digital resume, highlighting my technical skills, academic background, and recent certifications.
+# Hetarth Salat — Portfolio Website
 
-🚀 Key Features
-Semantic HTML5: Built using SEO-friendly and accessible tags (e.g., <header>, <main>, <section>, <footer>) to ensure clean code structure.
+A clean, professional, multi-page portfolio built with semantic HTML5 and handwritten CSS.  
+No frameworks. No build tools. Just solid fundamentals — as it should be.
 
-Responsive Layout: A mobile-first design built with CSS Flexbox for the navigation and CSS Grid for the skills section.
+**Theme:** Deep Winter (Navy · Slate · White · Accent Blue)  
+**Author:** Hetarth Salat — B.Tech CSE (AI/ML), Parul University, Vadodara  
+**GitHub Profile:** [@Skullcrusher161](https://github.com/Skullcrusher161)
 
-Certificate Gallery: A custom-styled "framed" gallery featuring certifications from IBM, Ethnotech, and Simplilearn.
+---
 
-Personal Branding: Styled with a professional Deep Winter color palette (Deep Navy, Slate Gray, and White) to reflect a minimalist and focused aesthetic.
+## Project Structure
 
-Optimized for UX: Implemented smooth scrolling and hover transitions for an interactive user experience.
+```
+portfolio/
+│
+├── index.html            → Home page: Hero, Foundational Narrative, Tech Stack Grid
+├── certificates.html     → Certificate gallery with hover-lift cards
+├── contact.html          → About Me narrative + Email / LinkedIn / GitHub links
+├── resume.html           → Embedded PDF viewer + download button
+│
+├── style.css             → Universal external stylesheet (all pages share this)
+│
+├── README.md             → This file — project documentation
+├── .gitignore            → Standard exclusions for web projects
+│
+└── assets/               → All static files (images & PDF)
+    ├── cert-python-ibm.jpg
+    ├── cert-htmlcss-ethnotech.jpg
+    ├── cert-prompt-simplilearn.jpg
+    ├── cert-hackathon-vadodara.jpg
+    └── hetarth-salat-resume.pdf
+```
 
-🛠️ Tech Stack
-HTML5: For structured content.
+---
 
-CSS3: For layout (Flexbox/Grid), custom animations, and responsive breakpoints.
 
-Google Fonts: For clean, professional typography.
+## CSS Architecture Notes
 
-🎯 About Me
-I am a 2nd-year B.Tech CSE student specializing in AI & ML. My current focus is on mastering Python, Java, and Full-Stack Web Development. I enjoy the process of turning complex problems into simple, functional, and aesthetically pleasing digital solutions.
+All styles live in a single `styles.css`. The file is organised into clearly labelled sections:
 
-Built with 💻 by Hetarth Salat Feel free to reach out for collaborations!
+1. CSS Custom Properties (design tokens — colours, fonts, spacing)
+2. Reset & Base
+3. Typography
+4. Layout Utilities (`.container`, `.section`)
+5. Navbar (sticky, frosted-glass effect via `backdrop-filter`)
+6. Hero
+7. Narrative Section
+8. Tech Stack Grid
+9. Certificates Grid
+10. Contact Layout
+11. Resume Embed
+12. Footer
+13. Animations (`fadeUp`, staggered delays)
+14. Responsive breakpoints (900px, 650px, 420px)
+
+---
+
+*Built with ❤ and handwritten CSS — no frameworks were harmed in the making of this portfolio.*
