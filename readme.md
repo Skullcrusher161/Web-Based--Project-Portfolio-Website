@@ -1,4 +1,4 @@
-# Hetarth Salat — Portfolio v2
+# Hetarth Salat — Portfolio
 
 A clean, professional, multi-page portfolio hand-built with semantic HTML5 and CSS3.  
 No frameworks. No build tools. Pure fundamentals — exactly the philosophy it represents.
