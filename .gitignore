@@ -1,0 +1,47 @@
+# === Operating System Files ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# === Editor & IDE ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*~
+
+# === Node (if ever used) ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# === Environment & Secrets ===
+.env
+.env.local
+.env.*.local
+
+# === Build Outputs (if tools are added later) ===
+dist/
+build/
+out/
+
+# === Logs ===
+*.log
+logs/
+
+# === Misc ===
+*.bak
+*.tmp
+*.temp
