@@ -3,152 +3,186 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Certifications — Hetarth Salat</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <meta name="description" content="Certificates and achievements — Hetarth Salat." />
+  <title>Certificates · Hetarth Salat</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="scanlines" aria-hidden="true"></div>
-
-  <!-- ═══════════════════════════════
-       NAVBAR
-  ═══════════════════════════════ -->
-  <header class="site-header">
-    <nav class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-bracket">[</span>hs<span class="logo-bracket">]</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html#about">about</a></li>
-        <li><a href="index.html#skills">skills</a></li>
-        <li><a href="certifications.html" class="nav-active">certificates</a></li>
-        <li><a href="index.html#contact" class="nav-cta">contact</a></li>
-      </ul>
-      <button class="nav-hamburger" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-brand">Hetarth<em>.</em></a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
-    </nav>
-  </header>
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="certificates.html" class="active">Certificates</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html" class="nav-resume">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <main>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Credentials</span>
+      <h1>Certificates &amp; Achievements</h1>
+      <p>Each one a chapter. A record of deliberate, directed learning across platforms, institutions, and real-world events.</p>
+    </div>
+  </div>
 
-    <!-- ═══════════════════════════════
-         PAGE HEADER
-    ═══════════════════════════════ -->
-    <section class="certs-page-hero">
-      <a href="index.html" class="back-link">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-        Back to Portfolio
-      </a>
-      <div class="section-label" style="margin-top: 24px;">
-        <span class="label-line"></span>
-        <span class="label-text">// certifications.gallery</span>
+  <!-- CERTIFICATE LIST (large-format) -->
+  <section class="section--slim">
+    <div class="wrap">
+      <div class="cert-list">
+
+        <!-- 1 · IBM Python -->
+        <article class="cert-item fu">
+          <div class="cert-img-pane">
+            <!--
+              Place your certificate screenshot at: assets/cert-python-ibm.jpg
+              The onerror handler below shows a graceful fallback if the file is missing.
+            -->
+            <img
+              src="assets/cert-python-ibm.jpg"
+              alt="IBM Python for Data Science Certificate"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <figure class="cert-placeholder" style="display:none;">
+              <span>🐍</span>
+              <figcaption>cert-python-ibm.jpg<br>Drop image in /assets</figcaption>
+            </figure>
+          </div>
+          <div class="cert-info">
+            <p class="cert-org">IBM · Coursera</p>
+            <h2 class="cert-title-text">Python for Data Science, AI &amp; Development</h2>
+            <p class="cert-desc">
+              Foundational Python proficiency covering data types, control flow, functions, and NumPy/Pandas
+              exposure. Focused on writing clean, readable scripts for data manipulation — directly applicable
+              to my AI/ML specialisation at Parul University.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag">Python</span>
+              <span class="cert-tag">Data Science</span>
+              <span class="cert-tag">AI Foundations</span>
+              <span class="cert-tag">IBM</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 · Ethnotech HTML/CSS -->
+        <article class="cert-item fu fu-1">
+          <div class="cert-img-pane">
+            <img
+              src="assets/cert-htmlcss-ethnotech.jpg"
+              alt="Ethnotech HTML and CSS Certificate"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <figure class="cert-placeholder" style="display:none;">
+              <span>🌐</span>
+              <figcaption>cert-htmlcss-ethnotech.jpg<br>Drop image in /assets</figcaption>
+            </figure>
+          </div>
+          <div class="cert-info">
+            <p class="cert-org">Ethnotech</p>
+            <h2 class="cert-title-text">HTML &amp; CSS Fundamentals</h2>
+            <p class="cert-desc">
+              Comprehensive introduction to semantic HTML5, CSS box model, Flexbox, Grid, and responsive design.
+              The handwritten CSS in this portfolio is the living proof of that foundation — no frameworks,
+              just clean, purposeful styling from scratch.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag">HTML5</span>
+              <span class="cert-tag">CSS3</span>
+              <span class="cert-tag">Responsive Design</span>
+              <span class="cert-tag">Web Dev</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 · Simplilearn Prompt Engineering -->
+        <article class="cert-item fu fu-2">
+          <div class="cert-img-pane">
+            <img
+              src="assets/cert-prompt-simplilearn.jpg"
+              alt="Simplilearn Prompt Engineering Certificate"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <figure class="cert-placeholder" style="display:none;">
+              <span>🤖</span>
+              <figcaption>cert-prompt-simplilearn.jpg<br>Drop image in /assets</figcaption>
+            </figure>
+          </div>
+          <div class="cert-info">
+            <p class="cert-org">Simplilearn</p>
+            <h2 class="cert-title-text">Introduction to Prompt Engineering</h2>
+            <p class="cert-desc">
+              Explored structured prompting techniques, chain-of-thought reasoning, zero-shot and few-shot
+              strategies, and effective interaction patterns for large language models. A practical gateway
+              into AI-human collaboration that directly supports my AI/ML coursework.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag">LLMs</span>
+              <span class="cert-tag">Prompt Engineering</span>
+              <span class="cert-tag">Generative AI</span>
+              <span class="cert-tag">Simplilearn</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 · Vadodara Hackathon -->
+        <article class="cert-item fu fu-3">
+          <div class="cert-img-pane">
+            <img
+              src="assets/cert-hackathon-vadodara.jpg"
+              alt="Vadodara Hackathon 6.0 Participation Certificate"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+            />
+            <figure class="cert-placeholder" style="display:none;">
+              <span>⚡</span>
+              <figcaption>cert-hackathon-vadodara.jpg<br>Drop image in /assets</figcaption>
+            </figure>
+          </div>
+          <div class="cert-info">
+            <p class="cert-org">Vadodara · 2024</p>
+            <h2 class="cert-title-text">Vadodara Hackathon 6.0</h2>
+            <p class="cert-desc">
+              Participated in one of Vadodara's flagship innovation events — 24 hours of ideating, prototyping,
+              and presenting alongside engineers from across Gujarat. My first real-world team build under
+              time pressure. The code was messy; the lessons were not.
+            </p>
+            <div class="cert-tags">
+              <span class="cert-tag">Hackathon</span>
+              <span class="cert-tag">Teamwork</span>
+              <span class="cert-tag">Prototyping</span>
+              <span class="cert-tag">Vadodara</span>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.cert-list -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <span class="footer-copy">© 2025 Hetarth Salat · Parul University, Vadodara</span>
+      <div class="footer-links">
+        <a href="https://github.com/Skullcrusher161" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hetarth-salat-a8024132b" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
       </div>
-      <h1 class="certs-page-title">Earned.<br><span class="accent">Verified.</span></h1>
-      <p class="certs-page-sub">
-        Three checkpoints in an ongoing journey — each one representing a deliberate investment in a new skill.
-      </p>
-    </section>
-
-    <!-- ═══════════════════════════════
-         CERTIFICATE GALLERY
-    ═══════════════════════════════ -->
-    <section class="certs-gallery-section">
-      <div class="certs-gallery-grid">
-
-        <!-- IBM Python -->
-        <article class="cert-frame-wrap">
-          <div class="cert-frame-label">01 / 03</div>
-          <a href="assets/ibm-python.pdf" target="_blank" rel="noopener" class="cert-frame">
-            <div class="cert-frame-inner">
-              <div class="cert-issuer-logo">IBM</div>
-              <div class="cert-frame-body">
-                <p class="cert-issued-by">Issued by</p>
-                <h2 class="cert-title">Python for Data Science, AI &amp; Development</h2>
-                <p class="cert-desc">
-                  Covers Python fundamentals, data structures, working with data, and an introduction to machine learning libraries.
-                </p>
-              </div>
-              <div class="cert-frame-footer">
-                <span class="cert-verified">
-                  <span class="verified-dot"></span>
-                  Verified Certificate
-                </span>
-                <span class="cert-open-hint">Click to open PDF ↗</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <!-- Ethnotech HTML/CSS -->
-        <article class="cert-frame-wrap">
-          <div class="cert-frame-label">02 / 03</div>
-          <a href="assets/ethnotech-htmlcss.pdf" target="_blank" rel="noopener" class="cert-frame">
-            <div class="cert-frame-inner">
-              <div class="cert-issuer-logo ethnotech">Ethnotech</div>
-              <div class="cert-frame-body">
-                <p class="cert-issued-by">Issued by</p>
-                <h2 class="cert-title">HTML &amp; CSS Web Development</h2>
-                <p class="cert-desc">
-                  Semantic HTML5, CSS layout models including Flexbox &amp; Grid, and responsive design principles for modern web.
-                </p>
-              </div>
-              <div class="cert-frame-footer">
-                <span class="cert-verified">
-                  <span class="verified-dot"></span>
-                  Verified Certificate
-                </span>
-                <span class="cert-open-hint">Click to open PDF ↗</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-        <!-- Simplilearn Prompt Engineering -->
-        <article class="cert-frame-wrap">
-          <div class="cert-frame-label">03 / 03</div>
-          <a href="assets/simplilearn-prompt.pdf" target="_blank" rel="noopener" class="cert-frame">
-            <div class="cert-frame-inner">
-              <div class="cert-issuer-logo simplilearn">Simplilearn</div>
-              <div class="cert-frame-body">
-                <p class="cert-issued-by">Issued by</p>
-                <h2 class="cert-title">Prompt Engineering for AI</h2>
-                <p class="cert-desc">
-                  Techniques for designing effective prompts, working with large language models, and applying prompt patterns in real workflows.
-                </p>
-              </div>
-              <div class="cert-frame-footer">
-                <span class="cert-verified">
-                  <span class="verified-dot"></span>
-                  Verified Certificate
-                </span>
-                <span class="cert-open-hint">Click to open PDF ↗</span>
-              </div>
-            </div>
-          </a>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ═══════════════════════════════
-         BACK CTA
-    ═══════════════════════════════ -->
-    <section class="certs-back-section">
-      <p class="certs-back-note">More certifications on the way — this list grows with each semester.</p>
-      <a href="index.html" class="btn-ghost">← Return to Portfolio</a>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <span class="footer-copy">© 2025 Hetarth Salat</span>
-    <span class="footer-sep">·</span>
-    <span class="footer-built">Built with HTML &amp; CSS · No frameworks.</span>
+    </div>
   </footer>
 
+  <script>
+    document.getElementById('burger').addEventListener('click', () => {
+      document.getElementById('navList').classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
